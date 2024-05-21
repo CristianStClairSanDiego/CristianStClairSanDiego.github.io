@@ -129,10 +129,39 @@
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
 
-            <video width="1280" height="720" controls>
-              <source src="resources/Pokemon_Simulator_Demo.mov" type="video/mov">
+            <video width="400" height="225" controls>
+              <source src=resources/Pokemon_Simulator_Demo.mov type="video/mp4">
             </video>
-
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src=resources/Pokémon_Pikachu.png alt="Picture of Pikachu" class="img-fluid">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src=resources/TypeMatchups.png alt="Picture of Pokémon type matchups" class="img-fluid">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src=resources/TrainerRed.png alt="Picture of a Pokémon Trainer from the original Pokémon games." class="img-fluid">
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-4">
@@ -151,9 +180,54 @@
                 Pokémon.
               </p>
               <h4>Project design</h4>
+              <p>
+                The basis of Pokémon can be identified into 3 main classes. <b>Pokémon, Moves,</b> and <b>Trainers.</b>
+                Let's start with Pokémon.
+              </p>
+              <p>
+                All Pokémon are extensions of a parent Pokémon class. This is because, universally, all Pokémon are the same.
+                They all have stats, such as HP, Attack, Defense, and Speed, as well as types, such as Fire, Water, and Grass. 
+                Pokémon are unique however in the specific calculation of their stats, as well as their evolution lines, and the attacks they can learn.
+              </p>
+              <p>
+                Moves (also referenced as Attacks are) all implemented through a Move interface. Attacks in Pokemon are unique in 3 distinct ways. All Moves have an associated type with it 
+                (Thunderbolt is an Electric type Move), an Attack Type (Thunderbolt is a Special Attack), and a Power Value (Thunderbolt has a Power Value of 90). Moves in the Pokémon games tend
+                to have more unique effects, such as priority, but we wanted to focus the core of our gameplay around the basics of moves. Our moves are also not accuracy dependent. In the games, attacks,
+                especially stronger ones, can have more varying accuracies compared to guarunteed hits. These moves can be learned by Pokémon when they reach high enough levels or when they evolve into stronger Pokémon.
+              </p>
+              <p>
+                Trainers (and players) are the puppet masters when it comes to the Pokémon games. As a trainer, it is up to you to pick your starter Pokémon, catch new Pokémon, train your team, and battle your enemies. This is the core of the
+                Pokémon games. This is what makes the game so unique- the feeling of having all the power in the world. Your journey to become the very best lies in your hands! Our trainers have the ability to Catch, Train, and Battle with their 
+                Pokémon as they become a better and better trainer.
+              </p>
               <h4>Implementation</h4>
-
-
+              <p>
+                Our team, Austin, Bill, Emmett, and I, worked on all of the aforementioned funcationality. However, the core of my participation can be found in the <b>starting of your Pokémon journey and the battling mechanics.</b> 
+                In this project, I was definitely the one most familiar with the Pokémon games, so I also took on somewhat of a Project Manager role in our team. I oversaw the implementation of our methods in the project to make sure that
+                our game aligned with the way it is seen in the Pokémon games.
+              </p>
+              <p>
+                When it came to battling, there is a lot of work that has to be done in order for a battle to go smoothly. For this sequence, I had to create an enemy trainer with a pre-established team, and utilize the stats of each Pokémon in order to determine 
+                how much damage attacks would do in the game. I wanted the battling in our system to reflect how it is in the games as closely as possible. Luckily the function for how damage is determined is already avaialable and can be seen below:
+              </p>
+              <br>
+              <br>
+                <img src=resources/PokemonDamage.png alt="Picture of Pokémon Damage Calculation" class="img-fluid">
+              <br>
+              <br>
+              <p>
+                Quite the complicated equation! Luckily a lot of these stats, such as the weather of the battle, or critical hits, were ignored for the sake of this project. However, another critical part of Pokémon is understanding the type matchups. 
+                Type matchups are what makes Pokémon battles so unique- You have the ability to do extra damage to types you are stronger against! I was able to come up with a very unique solution that implemented the use of a JSON Object that identified all of the
+                type matchups as seen in the Pokémon games, which served as the key for calculating the bonus damage multipliers as seen in the image above. This was definitely the most satisfying part of the project to have completed because it took a lot of extra research,
+                in regards to figuring out how to access and utilize JSON files. I was also really excited to use these damage calculations to implement Optimized Move picking for the enemy trainer. This way, the NPC trainer will always pick the strongest move they can when facing an opponent. 
+                This is a much better alternative when compared to having our enemy trainer picking random moves, when this isn't really how a trainer would compete in a battle.
+              </p>
+              <h4>Conclusion</h4>
+              <p>
+                Overall, I'm extremely proud of the work that we did on this project. Pokémon is a game that means a lot to me, 
+                and to bring part of that game to life by building a version of it myself felt very rewarding. I plan on working on this
+                project more in the future, implementing more Pokémon, more battle rules, and potentially more fun additions like Shiny Pokémon and completing the Pokédex.
+              </p>
             </div>
 
 
